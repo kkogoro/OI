@@ -45,8 +45,7 @@ struct Treap {
 	}
 	inline void build() {
 		root = newNode(-INF);
-		newNode(INF);
-		R(root) = 2;
+		R(root) = newNode(INF);
 		pushUP(root);
 		return;
 	}
